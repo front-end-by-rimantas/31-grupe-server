@@ -1,0 +1,30 @@
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+form > .form-row {
+    display: flex;
+    flex-direction: column;
+}
+form .error {
+    display: none;
+    color: red;
+    padding: 10px 15px;
+    border: 1px solid red;
+}
+form label {
+    margin-bottom: 5px;
+    text-transform: uppercase;
+}
+form input,
+form textarea,
+form select {
+    padding: 10px;
+    font-size: 20px;
+}
+form textarea {
+    resize: vertical;
+    min-height: 100px;
+    max-height: 300px;
+}
