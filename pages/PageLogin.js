@@ -1,8 +1,8 @@
 const Page = require('../components/Page.js');
 
 class PageLogin extends Page {
-    constructor() {
-        super();
+    constructor(globalData) {
+        super(globalData);
         this.route = '';
         this.pageName = 'Login';
         this.pageTemplateName = 'home';

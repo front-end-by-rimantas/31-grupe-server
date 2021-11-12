@@ -1,8 +1,8 @@
 const Page = require('../components/Page.js');
 
 class PageEmpty extends Page {
-    constructor() {
-        super();
+    constructor(globalData) {
+        super(globalData);
         this.route = 'Empty';
         this.pageName = 'Empty';
         this.pageTemplateName = 'home';

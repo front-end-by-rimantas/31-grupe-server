@@ -1,8 +1,8 @@
 const Page = require('../components/Page.js');
 
 class Page404 extends Page {
-    constructor() {
-        super();
+    constructor(globalData) {
+        super(globalData);
         this.route = '404';
         this.pageName = '404';
         this.pageTemplateName = '404';

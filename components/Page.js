@@ -1,5 +1,6 @@
 class Page {
-    constructor() {
+    constructor(globalData) {
+        this.globalData = globalData;
         this.title = 'TODO';
         this.baseURL = 'http://localhost:3000/';
         this.route = '';

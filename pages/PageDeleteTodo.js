@@ -1,8 +1,8 @@
 const Page = require('../components/Page.js');
 
 class PageDeleteTodo extends Page {
-    constructor() {
-        super();
+    constructor(globalData) {
+        super(globalData);
         this.route = '';
         this.pageName = 'New';
         this.pageTemplateName = 'home';

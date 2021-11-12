@@ -2,8 +2,8 @@ const Page = require('../components/Page.js');
 const table = require('../components/table.js');
 
 class PageHomeUser extends Page {
-    constructor() {
-        super();
+    constructor(globalData) {
+        super(globalData);
         this.route = '';
         this.pageName = 'Your tasks';
         this.pageTemplateName = 'home';
