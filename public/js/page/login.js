@@ -27,7 +27,7 @@ submitDOM.addEventListener('click', (e) => {
         const xhttp = new XMLHttpRequest();
         xhttp.onreadystatechange = function () {
             if (this.readyState == 4) {
-                console.log(xhttp.responseText);
+                location.href = '../';
             }
         };
         xhttp.open("POST", "/api/token", true);

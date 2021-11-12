@@ -34,6 +34,7 @@ class PageHomeUser extends Page {
 
     bodyHTML() {
         return `<h1>TODO list</h1>
+                <button id="logout" class="btn">Logout</button>
                 <button id="new_task_button" class="btn">New task</button>
                 ${table(this.demoData)}
                 <div id="new_task_lightbox" class="lightbox hidden">

@@ -87,6 +87,23 @@ handlers._token.put = async (data, callback) => {
 
 handlers._token.delete = async (data, callback) => {
     // istrinam
+    try {
+        const isLogout = await fs.delete('token', data.user.token);
+        if (isLogout) {
+            const cookies = [
+                'login-token=',
+                'path=/',
+                'expires=Thu, 01 Jan 1970 00:00:00 UTC',
+            ];
+            return callback(200, 'Vartotojas islogintas', {
+                'Set-Cookie': cookies.join('; '),
+            });
+        } else {
+            return callback(503, 'Nepavyko isloginti vartotojo');
+        }
+    } catch (error) {
+        return callback(503, 'Nepavyko isloginti vartotojo (vidine serverio problema)');
+    }
 }
 
 handlers._token.verify = async (tokenStr) => {

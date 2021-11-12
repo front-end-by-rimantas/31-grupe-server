@@ -3,7 +3,7 @@ const Page = require('../components/Page.js');
 class PageLogin extends Page {
     constructor(globalData) {
         super(globalData);
-        this.route = '';
+        this.route = 'login';
         this.pageName = 'Login';
         this.pageTemplateName = 'home';
     }
@@ -27,7 +27,7 @@ class PageLogin extends Page {
                         <button type="submit" class="btn">Login</button>
                     </div>
                 </form>
-                <script src="./js/page/login.js" type="module" defer></script>`;
+                <script src="../js/page/login.js" type="module" defer></script>`;
     }
 }
 

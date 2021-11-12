@@ -1,5 +1,8 @@
 import { Form } from "../components/Form.js";
 import { Lightbox } from "../components/Lightbox.js";
+import { commonLogic } from "../components/commonLogicForProtectedRoutes.js";
+
+commonLogic();
 
 const newTaskBtnDOM = document.getElementById('new_task_button');
 const allUpdateBtnDOM = document.querySelectorAll('.table button[data-action="update"]');
