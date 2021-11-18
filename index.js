@@ -13,6 +13,11 @@ app.init = async () => {
 
     // uzkurti serveri
     server.init(connection);
+
+    // reguliariu procesu paleidimas
+    setInterval(() => {
+        // nebegaliojanciu token failu trinimas
+    }, 24 * 60 * 60 * 1000);
 };
 
 app.init();
